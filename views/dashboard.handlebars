@@ -1,0 +1,10 @@
+<h3> Create a new post</h3>
+
+{{#if posts.length}}
+<section>
+    <h3>My Posts</h3>
+    {{#each posts as |post| }}
+    {{> dashboard-postlist post}}
+    {{/each}}
+</section>
+{{/if}}
